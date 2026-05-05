@@ -8,6 +8,7 @@ const projects = [
     context: "Confidential fintech onboarding and identity verification flow",
     summary:
       "Improved a sensitive verification flow with progressive disclosure, field-level guidance, and reassurance copy that helped users understand why personal information was required.",
+    thumbnail: "assets/thumbnail-neutral.svg",
     artifact: "assets/trust-verification-mockup.png",
     artifactAlt: "Anonymized verification screen showing field-level support and trust-building copy.",
     sections: [
@@ -52,6 +53,7 @@ const projects = [
     context: "Confidential cross-product content system work",
     summary:
       "Led an initiative to create one unified error-message source of truth across B2C and B2B products, then connected it to Figma and an AI-assisted validator for faster use.",
+    thumbnail: "assets/thumbnail-neutral.svg",
     artifact: "assets/error-message-system-workflow.png",
     artifactAlt: "Anonymized workflow showing how scattered error messages became a unified copy system.",
     sections: [
@@ -129,6 +131,7 @@ const projects = [
     context: "Confidential AI-assisted Figma workflow",
     summary:
       "Created a Figma plugin workflow that helped designers and writers check selected text layers against UX writing standards and apply improved error messages in context.",
+    thumbnail: "assets/thumbnail-neutral.svg",
     artifacts: [
       {
         src: "assets/error-message-system-workflow.png",
@@ -179,6 +182,7 @@ const projects = [
     context: "Confidential fintech terminology and hierarchy work",
     summary:
       "Created a product language guide to clarify the relationship between a digital wallet and account feature, reducing user confusion and internal terminology inconsistency.",
+    thumbnail: "assets/thumbnail-neutral.svg",
     artifact: "assets/product-language-system-diagram.png",
     artifactAlt: "Anonymized diagram showing a product language hierarchy between a digital wallet and account feature.",
     sections: [
@@ -220,6 +224,7 @@ const projects = [
     context: "Design-stage gaming quests and rewards experience",
     summary:
       "Shaped design-stage UX copy for a gaming quests and rewards experience, including task instructions, progress states, reward messaging, and a recreated before/after copy sample.",
+    thumbnail: "assets/thumbnail-neutral.svg",
     artifact: "assets/reward-points-copy-table-recreated.png",
     artifactAlt: "Neutral copy table showing before and after reward points copy improvements.",
     sections: [
@@ -291,18 +296,10 @@ const externalWork = [
 
 const managerFeedback = [
   {
-    label: "Manager feedback",
-    title: "Detail-led copy decisions",
-    summary:
-      "Feedback highlighted my habit of going deep into the details, gathering facts and different perspectives, and asking for guidance before finalizing copy decisions.",
     image: "assets/manager-feedback-detail-work.jpg",
     alt: "Anonymized manager feedback screenshot about going deep into details before making copy decisions."
   },
   {
-    label: "Performance feedback",
-    title: "Research, collaboration, and knowledge-sharing",
-    summary:
-      "Recent performance feedback recognized thorough research, strong rationale, team collaboration, reviewing others' work, and sharing knowledge with the team.",
     image: "assets/manager-feedback-performance.jpg",
     alt: "Anonymized performance feedback screenshot about research, collaboration, and knowledge-sharing."
   }
@@ -384,6 +381,7 @@ function renderHome() {
 }
 
 function getProjectImage(project) {
+  if (project.thumbnail) return project.thumbnail;
   if (project.artifact) return project.artifact;
   if (project.artifacts && project.artifacts.length) return project.artifacts[project.artifacts.length - 1].src;
   return "";
@@ -425,10 +423,7 @@ function externalCard(item) {
 function managerFeedbackSection() {
   return `
     <section class="page section feedback-section">
-      <div class="section-head">
-        <h2>Manager feedback</h2>
-        <p>Anonymized performance feedback that shows how I approach copy decisions, collaboration, and content quality.</p>
-      </div>
+      <h2>Feedback</h2>
       <div class="feedback-grid">
         ${managerFeedback.map(feedbackCard).join("")}
       </div>
@@ -438,13 +433,8 @@ function managerFeedbackSection() {
 
 function feedbackCard(item) {
   return `
-    <article class="feedback-card">
-      <div>
-        <span class="tag">${escapeHtml(item.label)}</span>
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.summary)}</p>
-      </div>
-      <a class="feedback-shot" href="${item.image}" target="_blank" rel="noreferrer" aria-label="Open full manager feedback snapshot">
+    <article class="feedback-card" aria-label="Anonymized feedback snapshot">
+      <a class="feedback-shot" href="${item.image}" target="_blank" rel="noreferrer" aria-label="Open full feedback snapshot">
         <img src="${item.image}" alt="${escapeHtml(item.alt)}">
       </a>
     </article>
@@ -482,6 +472,9 @@ function renderAbout() {
       <div class="split">
         <div class="lede">
           <p>I'm Esther Johnson, a Content Designer and UX Writer who helps bridge the gap between users and digital experiences, one word at a time.</p>
+          <figure class="about-photo">
+            <img src="assets/esther-johnson-portrait.jpg" alt="Portrait of Esther Johnson.">
+          </figure>
         </div>
         <div class="text-stack">
           <p>My work sits between content strategy, UX writing, product design, and research. I have written and improved microcopy for B2C and B2B products, simplified complex workflows, supported tone-of-voice systems, shaped information architecture, and partnered with designers, product managers, researchers, engineers, and stakeholders to make product experiences clearer.</p>
