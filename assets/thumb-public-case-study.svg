@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Public UX case study thumbnail">
+  <rect width="640" height="360" fill="#f8f5f1"/>
+  <rect x="116" y="70" width="408" height="220" rx="28" fill="#fffdf9" stroke="#e3dacf" stroke-width="2"/>
+  <path d="M178 132h124M178 170h188M178 208h146" stroke="#d8e2dd" stroke-width="16" stroke-linecap="round"/>
+  <rect x="384" y="124" width="84" height="112" rx="18" fill="#efe7dd" stroke="#3b241c" stroke-width="4"/>
+  <path d="M404 210l20-26 20 18 24-40" fill="none" stroke="#2f6f61" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="178" cy="252" r="16" fill="#3b241c"/>
+  <circle cx="224" cy="252" r="16" fill="#d8e2dd"/>
+  <circle cx="270" cy="252" r="16" fill="#d8e2dd"/>
+</svg>

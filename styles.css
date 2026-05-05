@@ -307,10 +307,6 @@ h3 {
   object-position: center;
 }
 
-.twitter-thumb img {
-  object-position: center 75%;
-}
-
 .card-copy {
   display: flex;
   flex-direction: column;

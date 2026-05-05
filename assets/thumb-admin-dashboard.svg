@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Admin dashboard exploration thumbnail">
+  <rect width="640" height="360" fill="#f8f5f1"/>
+  <rect x="98" y="74" width="444" height="212" rx="28" fill="#fffdf9" stroke="#e3dacf" stroke-width="2"/>
+  <rect x="128" y="104" width="80" height="152" rx="18" fill="#efe7dd"/>
+  <rect x="236" y="110" width="116" height="62" rx="18" fill="#d8e2dd"/>
+  <rect x="374" y="110" width="116" height="62" rx="18" fill="#f1ede8" stroke="#e3dacf" stroke-width="2"/>
+  <path d="M236 216h254M236 248h180" stroke="#d8e2dd" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="168" cy="136" r="16" fill="#3b241c"/>
+  <path d="M265 144h58M404 144h58" stroke="#2f6f61" stroke-width="10" stroke-linecap="round"/>
+</svg>

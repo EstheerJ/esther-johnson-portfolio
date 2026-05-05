@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Finance mobile application thumbnail">
+  <rect width="640" height="360" fill="#f8f5f1"/>
+  <rect x="226" y="52" width="188" height="256" rx="34" fill="#fffdf9" stroke="#3b241c" stroke-width="5"/>
+  <rect x="258" y="96" width="124" height="48" rx="18" fill="#efe7dd"/>
+  <path d="M266 190h108M266 226h78" stroke="#d8e2dd" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="320" cy="162" r="18" fill="#2f6f61"/>
+  <path d="M438 112c34 18 54 50 54 88M202 250c-30-22-48-54-48-92" stroke="#d2c6b8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M456 214l18 18 36-46" fill="none" stroke="#2f6f61" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
