@@ -309,11 +309,13 @@ function renderHome() {
       <div>
         <p class="kicker">Content Designer & UX Writer</p>
         <h1>Clear content for complex product experiences.</h1>
-        <p class="lede">I design UX content, product language systems, and clear interface copy for fintech, gaming, and B2C/B2B product experiences. My work helps teams simplify complex workflows, improve comprehension, and create product language users can trust.</p>
+        <p class="lede">I design UX content, product language systems, and clear interface copy across different products and solutions, including fintech, gaming, and B2C/B2B experiences. My work helps teams simplify complex workflows, improve comprehension, and create product language users can trust.</p>
       </div>
       <div class="hero-meta">
         <span class="pill">UX writing</span>
+        <span class="pill">Content design</span>
         <span class="pill">Content strategy</span>
+        <span class="pill">Information architecture</span>
         <span class="pill">Product language</span>
         <span class="pill">B2C & B2B</span>
         <span class="pill">AI-assisted workflows</span>
@@ -407,7 +409,7 @@ function renderWork() {
   app.innerHTML = `
     <section class="page">
       <p class="kicker">Selected work</p>
-      <h1>Content strategy, UX writing, and systems work.</h1>
+      <h1>Content design, UX writing, and systems work.</h1>
       <p class="lede">A mix of confidential case studies, AI-assisted tooling, product language systems, and design-stage product writing.</p>
       <div class="work-grid section">${featured}</div>
       <div class="section">
@@ -429,13 +431,12 @@ function renderAbout() {
       <h1>I design content that makes products more approachable.</h1>
       <div class="split">
         <div class="lede">
-          <p>I am Esther Johnson, a Content Designer and UX Writer who helps bridge the gap between users and digital experiences, one word at a time.</p>
+          <p>I'm Esther Johnson, a Content Designer and UX Writer who helps bridge the gap between users and digital experiences, one word at a time.</p>
         </div>
         <div class="text-stack">
           <p>My work sits between content strategy, UX writing, product design, and research. I have written and improved microcopy for B2C and B2B products, simplified complex workflows, supported tone-of-voice systems, shaped information architecture, and partnered with designers, product managers, researchers, engineers, and stakeholders to make product experiences clearer.</p>
-          <p>Users are at the center of how I think about design. Whether I am writing microcopy, shaping a content system, or improving a product flow, I care about helping people understand what is happening, what to do next, and why it matters.</p>
+          <p>Users are at the center of how I think about design. Whether I'm writing microcopy, shaping a content system, or improving a product flow, I care about helping people understand what is happening, what to do next, and why it matters.</p>
           <p>Before focusing deeply on UX writing, I worked in content strategy, where I learned how much structure, timing, audience insight, and brand consistency shape the way people understand information. That foundation still informs how I approach product content today.</p>
-          <p>I am especially interested in the moments where users need clarity the most: onboarding, verification, errors, financial actions, product terminology, and feature discovery.</p>
           <div class="actions">
             <a class="button" href="mailto:helloestherjohnson@gmail.com">Work with me</a>
             <a class="button secondary" href="#/work">View work</a>
