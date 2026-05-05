@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Rewards UX thumbnail">
+  <rect width="640" height="360" fill="#f8f5f1"/>
+  <rect x="96" y="78" width="448" height="204" rx="30" fill="#fffdf9" stroke="#e3dacf" stroke-width="2"/>
+  <circle cx="222" cy="180" r="62" fill="#efe7dd" stroke="#3b241c" stroke-width="5"/>
+  <circle cx="222" cy="180" r="30" fill="#d8e2dd"/>
+  <path d="M346 134h100M346 180h144M346 226h82" stroke="#d8e2dd" stroke-width="18" stroke-linecap="round"/>
+  <path d="M450 222l16 16 32-42" fill="none" stroke="#2f6f61" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M156 278c52 22 112 24 166 0" stroke="#2f6f61" stroke-width="8" stroke-linecap="round" opacity=".24"/>
+</svg>

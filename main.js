@@ -8,7 +8,7 @@ const projects = [
     context: "Confidential fintech onboarding and identity verification flow",
     summary:
       "Improved a sensitive verification flow with progressive disclosure, field-level guidance, and reassurance copy that helped users understand why personal information was required.",
-    thumbnail: "assets/thumbnail-neutral.svg",
+    thumbnail: "assets/thumb-trust.svg",
     artifact: "assets/trust-verification-mockup.png",
     artifactAlt: "Anonymized verification screen showing field-level support and trust-building copy.",
     sections: [
@@ -53,7 +53,7 @@ const projects = [
     context: "Confidential cross-product content system work",
     summary:
       "Led an initiative to create one unified error-message source of truth across B2C and B2B products, then connected it to Figma and an AI-assisted validator for faster use.",
-    thumbnail: "assets/thumbnail-neutral.svg",
+    thumbnail: "assets/thumb-error-system.svg",
     artifact: "assets/error-message-system-workflow.png",
     artifactAlt: "Anonymized workflow showing how scattered error messages became a unified copy system.",
     sections: [
@@ -131,7 +131,7 @@ const projects = [
     context: "Confidential AI-assisted Figma workflow",
     summary:
       "Created a Figma plugin workflow that helped designers and writers check selected text layers against UX writing standards and apply improved error messages in context.",
-    thumbnail: "assets/thumbnail-neutral.svg",
+    thumbnail: "assets/thumb-ai-validator.svg",
     artifacts: [
       {
         src: "assets/error-message-system-workflow.png",
@@ -182,7 +182,7 @@ const projects = [
     context: "Confidential fintech terminology and hierarchy work",
     summary:
       "Created a product language guide to clarify the relationship between a digital wallet and account feature, reducing user confusion and internal terminology inconsistency.",
-    thumbnail: "assets/thumbnail-neutral.svg",
+    thumbnail: "assets/thumb-language.svg",
     artifact: "assets/product-language-system-diagram.png",
     artifactAlt: "Anonymized diagram showing a product language hierarchy between a digital wallet and account feature.",
     sections: [
@@ -224,7 +224,7 @@ const projects = [
     context: "Design-stage gaming quests and rewards experience",
     summary:
       "Shaped design-stage UX copy for a gaming quests and rewards experience, including task instructions, progress states, reward messaging, and a recreated before/after copy sample.",
-    thumbnail: "assets/thumbnail-neutral.svg",
+    thumbnail: "assets/thumb-rewards.svg",
     artifact: "assets/reward-points-copy-table-recreated.png",
     artifactAlt: "Neutral copy table showing before and after reward points copy improvements.",
     sections: [
@@ -296,10 +296,18 @@ const externalWork = [
 
 const managerFeedback = [
   {
+    label: "Manager feedback",
+    quote:
+      "You go deep into the details, gain facts and opinions before making a final decision about your copy.",
+    note: "Recognized for thoughtful copy rationale and detail-led decisions.",
     image: "assets/manager-feedback-detail-work.jpg",
     alt: "Anonymized manager feedback screenshot about going deep into details before making copy decisions."
   },
   {
+    label: "Performance feedback",
+    quote:
+      "She exhibits a commitment to thorough research, gathering comprehensive information and diverse perspectives.",
+    note: "Recognized for research depth, collaboration, and knowledge-sharing.",
     image: "assets/manager-feedback-performance.jpg",
     alt: "Anonymized performance feedback screenshot about research, collaboration, and knowledge-sharing."
   }
@@ -429,9 +437,15 @@ function managerFeedbackSection() {
 
 function feedbackCard(item) {
   return `
-    <article class="feedback-card" aria-label="Anonymized feedback snapshot">
-      <a class="feedback-shot" href="${item.image}" target="_blank" rel="noreferrer" aria-label="Open full feedback snapshot">
+    <article class="feedback-card">
+      <div class="feedback-copy">
+        <span class="tag">${escapeHtml(item.label)}</span>
+        <blockquote>${escapeHtml(item.quote)}</blockquote>
+        <p>${escapeHtml(item.note)}</p>
+      </div>
+      <a class="feedback-shot" href="${item.image}" target="_blank" rel="noreferrer" aria-label="Open original feedback snapshot">
         <img src="${item.image}" alt="${escapeHtml(item.alt)}">
+        <span>Original snapshot</span>
       </a>
     </article>
   `;

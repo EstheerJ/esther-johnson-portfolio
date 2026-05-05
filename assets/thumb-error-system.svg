@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Error message system thumbnail">
+  <rect width="640" height="360" fill="#f8f5f1"/>
+  <g fill="#fffdf9" stroke="#e3dacf" stroke-width="2">
+    <rect x="94" y="82" width="164" height="86" rx="22"/>
+    <rect x="382" y="82" width="164" height="86" rx="22"/>
+    <rect x="238" y="206" width="164" height="86" rx="22"/>
+  </g>
+  <path d="M258 125h124M320 168v38" stroke="#d2c6b8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M180 168l92 48M460 168l-92 48" stroke="#d2c6b8" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="176" cy="125" r="22" fill="#efe7dd"/>
+  <circle cx="464" cy="125" r="22" fill="#efe7dd"/>
+  <circle cx="320" cy="249" r="26" fill="#3b241c"/>
+  <path d="M309 249l8 9 17-22" fill="none" stroke="#fffdf9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 126h58M420 126h58M276 250h88" stroke="#d8e2dd" stroke-width="12" stroke-linecap="round"/>
+</svg>

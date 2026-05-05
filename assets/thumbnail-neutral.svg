@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Neutral project thumbnail">
-  <rect width="640" height="360" fill="#f7f8f5"/>
-  <rect x="72" y="56" width="496" height="248" rx="28" fill="#ffffff" stroke="#dfe4de" stroke-width="2"/>
-  <rect x="110" y="96" width="420" height="168" rx="22" fill="#eef3ef"/>
-  <circle cx="182" cy="180" r="44" fill="#dbe7e1"/>
-  <rect x="264" y="132" width="188" height="18" rx="9" fill="#c8d8d0"/>
-  <rect x="264" y="174" width="146" height="18" rx="9" fill="#d8e2dd"/>
-  <rect x="264" y="216" width="214" height="18" rx="9" fill="#d8e2dd"/>
-</svg>

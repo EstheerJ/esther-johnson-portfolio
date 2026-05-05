@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Product language system thumbnail">
+  <rect width="640" height="360" fill="#f8f5f1"/>
+  <path d="M320 104v86M202 250l118-60 118 60" stroke="#d2c6b8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="320" cy="104" r="48" fill="#3b241c"/>
+  <circle cx="202" cy="250" r="42" fill="#fffdf9" stroke="#e3dacf" stroke-width="2"/>
+  <circle cx="438" cy="250" r="42" fill="#fffdf9" stroke="#e3dacf" stroke-width="2"/>
+  <path d="M292 104h56M174 250h56M410 250h56" stroke="#d8e2dd" stroke-width="14" stroke-linecap="round"/>
+  <path d="M320 76v56M292 104h56" stroke="#fffdf9" stroke-width="9" stroke-linecap="round"/>
+  <rect x="112" y="68" width="416" height="224" rx="34" fill="none" stroke="#e3dacf" stroke-width="2"/>
+</svg>
