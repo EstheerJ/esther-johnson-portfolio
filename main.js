@@ -289,6 +289,25 @@ const externalWork = [
   }
 ];
 
+const managerFeedback = [
+  {
+    label: "Manager feedback",
+    title: "Detail-led copy decisions",
+    summary:
+      "Feedback highlighted my habit of going deep into the details, gathering facts and different perspectives, and asking for guidance before finalizing copy decisions.",
+    image: "assets/manager-feedback-detail-work.jpg",
+    alt: "Anonymized manager feedback screenshot about going deep into details before making copy decisions."
+  },
+  {
+    label: "Performance feedback",
+    title: "Research, collaboration, and knowledge-sharing",
+    summary:
+      "Recent performance feedback recognized thorough research, strong rationale, team collaboration, reviewing others' work, and sharing knowledge with the team.",
+    image: "assets/manager-feedback-performance.jpg",
+    alt: "Anonymized performance feedback screenshot about research, collaboration, and knowledge-sharing."
+  }
+];
+
 const app = document.querySelector("#app");
 
 function escapeHtml(value) {
@@ -359,6 +378,8 @@ function renderHome() {
         </div>
       </div>
     </section>
+
+    ${managerFeedbackSection()}
   `;
 }
 
@@ -398,6 +419,35 @@ function externalCard(item) {
         <span class="card-link">Open case study</span>
       </div>
     </a>
+  `;
+}
+
+function managerFeedbackSection() {
+  return `
+    <section class="page section feedback-section">
+      <div class="section-head">
+        <h2>Manager feedback</h2>
+        <p>Anonymized performance feedback that shows how I approach copy decisions, collaboration, and content quality.</p>
+      </div>
+      <div class="feedback-grid">
+        ${managerFeedback.map(feedbackCard).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function feedbackCard(item) {
+  return `
+    <article class="feedback-card">
+      <div>
+        <span class="tag">${escapeHtml(item.label)}</span>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.summary)}</p>
+      </div>
+      <a class="feedback-shot" href="${item.image}" target="_blank" rel="noreferrer" aria-label="Open full manager feedback snapshot">
+        <img src="${item.image}" alt="${escapeHtml(item.alt)}">
+      </a>
+    </article>
   `;
 }
 
@@ -444,6 +494,7 @@ function renderAbout() {
         </div>
       </div>
     </section>
+    ${managerFeedbackSection()}
   `;
 }
 

@@ -374,6 +374,50 @@ h3 {
   line-height: 1.55;
 }
 
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feedback-card {
+  display: grid;
+  gap: 18px;
+  align-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 18px;
+  box-shadow: 0 12px 44px rgba(31, 40, 36, 0.04);
+}
+
+.feedback-card h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  line-height: 1.18;
+}
+
+.feedback-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.62;
+}
+
+.feedback-shot {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f7f8f5;
+  overflow: hidden;
+}
+
+.feedback-shot img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+}
+
 .about-band {
   border-radius: var(--radius);
   background: var(--surface);
@@ -546,6 +590,7 @@ td {
   .project-layout,
   .work-grid,
   .support-grid,
+  .feedback-grid,
   .artifact-grid {
     grid-template-columns: 1fr;
   }
@@ -563,6 +608,10 @@ td {
 
   .card-copy {
     padding: 2px;
+  }
+
+  .feedback-shot img {
+    height: 320px;
   }
 
   .project-aside {
