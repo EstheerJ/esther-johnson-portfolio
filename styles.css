@@ -304,6 +304,14 @@ h3 {
   background: var(--accent-soft);
 }
 
+.external-thumb img {
+  object-position: center;
+}
+
+.twitter-thumb img {
+  object-position: center 75%;
+}
+
 .card-copy {
   display: flex;
   flex-direction: column;
@@ -312,14 +320,14 @@ h3 {
 }
 
 .work-card.compact {
-  grid-template-columns: 92px minmax(0, 1fr);
+  grid-template-columns: 132px minmax(0, 1fr);
   gap: 16px;
 }
 
 .work-card.compact .card-thumb,
 .work-card.compact .card-thumb img,
 .work-card.compact .card-thumb span {
-  height: 92px;
+  height: 104px;
 }
 
 .work-card.compact h3 {

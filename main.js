@@ -256,6 +256,8 @@ const externalWork = [
     summary:
       "A public UX case study exploring an archive feature concept for X/Twitter, showing product thinking, user flow exploration, and design rationale.",
     href: "https://medium.com/design-bootcamp/ux-case-study-x-formerlytwitter-archive-feature-594e54337fc0",
+    image: "assets/design-portfolio-twitter-archive.png",
+    thumbClass: "twitter-thumb",
     initials: "X"
   },
   {
@@ -264,6 +266,7 @@ const externalWork = [
     summary:
       "A visual design exploration for an admin dashboard experience.",
     href: "https://www.behance.net/gallery/178550013/Admin-Dashboard-Exploration/modules/1008463495",
+    image: "assets/design-portfolio-admin-dashboard.png",
     initials: "AD"
   },
   {
@@ -272,6 +275,7 @@ const externalWork = [
     summary:
       "A dashboard exploration focused on a task-management message section.",
     href: "https://www.behance.net/gallery/161787285/Task-Management-Dashboard",
+    image: "assets/design-portfolio-task-management.png",
     initials: "TM"
   },
   {
@@ -280,6 +284,7 @@ const externalWork = [
     summary:
       "A mobile app exploration for a finance and budgeting product experience.",
     href: "https://www.behance.net/gallery/152003771/Finance-Mobile-Application",
+    image: "assets/design-portfolio-finance-mobile.png",
     initials: "FM"
   }
 ];
@@ -381,7 +386,9 @@ function projectCard(project, featured = false, compact = false) {
 function externalCard(item) {
   return `
     <a class="work-card compact" href="${item.href}" target="_blank" rel="noreferrer">
-      <div class="card-thumb external-thumb" aria-hidden="true"><span>${escapeHtml(item.initials || "UX")}</span></div>
+      <div class="card-thumb external-thumb ${escapeHtml(item.thumbClass || "")}" aria-hidden="true">
+        ${item.image ? `<img src="${item.image}" alt="">` : `<span>${escapeHtml(item.initials || "UX")}</span>`}
+      </div>
       <div class="card-copy">
         <span class="tag">${escapeHtml(item.label)}</span>
         <h3>${escapeHtml(item.title)}</h3>
