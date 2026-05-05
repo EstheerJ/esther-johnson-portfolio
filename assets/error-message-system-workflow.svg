@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#29302d" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .sans { font-family: Inter, Arial, sans-serif; }
+      .eyebrow { fill:#2f6f61; font-size:18px; font-weight:850; }
+      .h1 { fill:#20231f; font-size:54px; font-weight:850; }
+      .body { fill:#66706a; font-size:22px; }
+      .card-title { fill:#20231f; font-size:24px; font-weight:850; }
+      .card-copy { fill:#5d675f; font-size:18px; }
+      .num { fill:#ffffff; font-size:20px; font-weight:850; }
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="#f5f6f3"/>
+  <circle cx="105" cy="80" r="210" fill="#2f6f61" opacity="0.08"/>
+  <text x="72" y="78" class="sans eyebrow">CONTENT SYSTEM WORKFLOW</text>
+  <text x="72" y="146" class="sans h1">From scattered errors to a reusable system</text>
+  <text x="72" y="192" class="sans body">A recreated artifact showing how B2C and B2B error messages became a shared copy pool, design-library pattern, and validator workflow.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="280" width="230" height="260" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <circle cx="112" cy="324" r="18" fill="#2f6f61"/><text x="106" y="331" class="sans num">1</text>
+    <text x="102" y="382" class="sans card-title">Collect</text>
+    <text x="102" y="425" class="sans card-copy">Writers gathered</text>
+    <text x="102" y="453" class="sans card-copy">messages from their</text>
+    <text x="102" y="481" class="sans card-copy">product areas.</text>
+
+    <rect x="330" y="280" width="230" height="260" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <circle cx="370" cy="324" r="18" fill="#2f6f61"/><text x="364" y="331" class="sans num">2</text>
+    <text x="360" y="382" class="sans card-title">Consolidate</text>
+    <text x="360" y="425" class="sans card-copy">Messages moved into</text>
+    <text x="360" y="453" class="sans card-copy">one sheet for cross-</text>
+    <text x="360" y="481" class="sans card-copy">review and alignment.</text>
+
+    <rect x="588" y="280" width="230" height="260" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <circle cx="628" cy="324" r="18" fill="#2f6f61"/><text x="622" y="331" class="sans num">3</text>
+    <text x="618" y="382" class="sans card-title">Standardize</text>
+    <text x="618" y="425" class="sans card-copy">Approved rewrites</text>
+    <text x="618" y="453" class="sans card-copy">became reusable</text>
+    <text x="618" y="481" class="sans card-copy">copy patterns.</text>
+
+    <rect x="846" y="280" width="230" height="260" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <circle cx="886" cy="324" r="18" fill="#2f6f61"/><text x="880" y="331" class="sans num">4</text>
+    <text x="876" y="382" class="sans card-title">Embed</text>
+    <text x="876" y="425" class="sans card-copy">Patterns were added</text>
+    <text x="876" y="453" class="sans card-copy">to the Figma design</text>
+    <text x="876" y="481" class="sans card-copy">library.</text>
+
+    <rect x="1104" y="280" width="230" height="260" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <circle cx="1144" cy="324" r="18" fill="#2f6f61"/><text x="1138" y="331" class="sans num">5</text>
+    <text x="1134" y="382" class="sans card-title">Validate</text>
+    <text x="1134" y="425" class="sans card-copy">Claude and the Figma</text>
+    <text x="1134" y="453" class="sans card-copy">plugin helped teams</text>
+    <text x="1134" y="481" class="sans card-copy">check copy quickly.</text>
+  </g>
+
+  <path d="M304 410H328M562 410H586M820 410H844M1078 410H1102" stroke="#9fb4aa" stroke-width="3" stroke-linecap="round"/>
+  <rect x="72" y="635" width="1256" height="76" rx="8" fill="#e8f3ee" stroke="#cfe0d9"/>
+  <text x="104" y="682" class="sans body" fill="#234f44">Outcome: a unified error-message source of truth that was easier to review, reuse, and apply inside product design workflows.</text>
+</svg>

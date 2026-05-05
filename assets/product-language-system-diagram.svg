@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#29302d" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .sans { font-family: Inter, Arial, sans-serif; }
+      .eyebrow { fill:#2f6f61; font-size:18px; font-weight:850; }
+      .h1 { fill:#20231f; font-size:54px; font-weight:850; }
+      .body { fill:#66706a; font-size:22px; }
+      .title { fill:#20231f; font-size:25px; font-weight:850; }
+      .copy { fill:#5d675f; font-size:18px; }
+      .label { fill:#ffffff; font-size:18px; font-weight:850; }
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="#f5f6f3"/>
+  <circle cx="1240" cy="130" r="240" fill="#6b5bd6" opacity="0.07"/>
+  <text x="72" y="78" class="sans eyebrow">PRODUCT LANGUAGE SYSTEM</text>
+  <text x="72" y="146" class="sans h1">Clarifying product hierarchy through language</text>
+  <text x="72" y="192" class="sans body">A recreated artifact showing how a broad wallet concept and a supporting account feature were separated into clear usage rules.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="286" width="1216" height="380" rx="10" fill="#ffffff" stroke="#dfe4de"/>
+    <rect x="150" y="348" width="420" height="230" rx="8" fill="#1f2824"/>
+    <text x="190" y="408" class="sans label">Primary product concept</text>
+    <text x="190" y="466" class="sans" fill="#ffffff" font-size="42" font-weight="850">Digital wallet</text>
+    <text x="190" y="520" class="sans" fill="#cdd8d2" font-size="20">Use as the main user-facing term</text>
+    <text x="190" y="550" class="sans" fill="#cdd8d2" font-size="20">for the overall product and payout method.</text>
+
+    <rect x="830" y="348" width="420" height="230" rx="8" fill="#e8f3ee" stroke="#cfe0d9"/>
+    <text x="870" y="408" class="sans" fill="#2f6f61" font-size="18" font-weight="850">Supporting feature concept</text>
+    <text x="870" y="466" class="sans title" font-size="42">Account feature</text>
+    <text x="870" y="520" class="sans copy">Use when explaining where payouts</text>
+    <text x="870" y="550" class="sans copy">are received or payments are handled.</text>
+
+    <path d="M590 464H810" stroke="#9fb4aa" stroke-width="4" stroke-linecap="round"/>
+    <path d="M792 448L812 464L792 480" fill="none" stroke="#9fb4aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="650" y="430" class="sans copy">clarifies</text>
+  </g>
+
+  <g>
+    <rect x="92" y="708" width="378" height="54" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <text x="120" y="742" class="sans copy">Primary label for decisions</text>
+    <rect x="510" y="708" width="378" height="54" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <text x="538" y="742" class="sans copy">Usage rules in docs</text>
+    <rect x="930" y="708" width="378" height="54" rx="8" fill="#ffffff" stroke="#dfe4de"/>
+    <text x="958" y="742" class="sans copy">Future localization readiness</text>
+  </g>
+</svg>
