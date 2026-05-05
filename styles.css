@@ -2,14 +2,14 @@
   color-scheme: light;
   --paper: #fbfbf8;
   --surface: #ffffff;
-  --ink: #20231f;
+  --ink: #3a2a22;
   --muted: #626b64;
   --soft: #eef1ed;
   --line: #dfe4de;
   --accent: #2f6f61;
   --accent-2: #6b5bd6;
   --accent-soft: #e8f3ee;
-  --dark: #1f2824;
+  --dark: #3b241c;
   --radius: 8px;
   --shadow: 0 22px 70px rgba(31, 40, 36, 0.09);
 }
@@ -412,7 +412,7 @@ h3 {
 
 .about-photo {
   margin: 28px 0 0;
-  max-width: 420px;
+  max-width: 330px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
