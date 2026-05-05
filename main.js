@@ -322,10 +322,15 @@ function renderHome() {
 
   app.innerHTML = `
     <section class="page hero">
-      <div>
-        <p class="kicker">Content Designer & UX Writer</p>
-        <h1>Clear content for complex product experiences.</h1>
-        <p class="lede">I design UX content, product language systems, and clear interface copy across different products and solutions, including fintech, gaming, and B2C/B2B experiences. My work helps teams simplify complex workflows, improve comprehension, and create product language users can trust.</p>
+      <div class="hero-profile">
+        <div>
+          <p class="kicker">Content Designer & UX Writer</p>
+          <h1>Clear content for complex product experiences.</h1>
+          <p class="lede">I design UX content, product language systems, and clear interface copy across different products and solutions, including fintech, gaming, and B2C/B2B experiences. My work helps teams simplify complex workflows, improve comprehension, and create product language users can trust.</p>
+        </div>
+        <figure class="home-photo">
+          <img src="assets/esther-johnson-portrait.jpg" alt="Portrait of Esther Johnson.">
+        </figure>
       </div>
       <div class="hero-meta">
         <span class="pill">UX writing</span>

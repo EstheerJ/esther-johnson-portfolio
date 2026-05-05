@@ -103,6 +103,29 @@ main:focus {
   padding-top: clamp(28px, 5vw, 58px);
 }
 
+.hero-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 168px;
+  gap: clamp(24px, 5vw, 56px);
+  align-items: center;
+}
+
+.home-photo {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.home-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .kicker {
   margin: 0 0 16px;
   color: var(--accent);
@@ -193,14 +216,12 @@ h3 {
 }
 
 .section-head {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.75fr) minmax(280px, 1fr);
-  gap: 34px;
-  align-items: end;
+  max-width: 780px;
   margin-bottom: 30px;
 }
 
 .section-head p {
+  max-width: 720px;
   margin-bottom: 0;
   color: var(--muted);
   font-size: 1.04rem;
@@ -640,6 +661,16 @@ td {
     padding: 2px;
   }
 
+  .hero-profile {
+    grid-template-columns: minmax(0, 1fr) 128px;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .home-photo {
+    width: 128px;
+  }
+
   .feedback-shot img {
     height: auto;
   }
@@ -652,6 +683,14 @@ td {
 @media (max-width: 420px) {
   .nav {
     font-size: 0.86rem;
+  }
+
+  .hero-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .home-photo {
+    width: 136px;
   }
 
   .button {
