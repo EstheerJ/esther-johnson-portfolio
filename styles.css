@@ -304,7 +304,11 @@ h3 {
 }
 
 .external-thumb img {
-  object-position: center;
+  object-position: center top;
+}
+
+.twitter-thumb img {
+  object-position: center 75%;
 }
 
 .card-copy {
@@ -327,6 +331,41 @@ h3 {
 
 .work-card.compact h3 {
   font-size: 1.08rem;
+}
+
+.external-card {
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: stretch;
+  padding: 16px;
+}
+
+.external-card .card-thumb,
+.external-card .card-thumb img,
+.external-card .card-thumb span {
+  height: 132px;
+}
+
+.external-card .card-copy {
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.external-card h3 {
+  margin-top: 7px;
+  margin-bottom: 8px;
+}
+
+.external-card p {
+  max-width: 560px;
+}
+
+.external-card .card-link {
+  margin-top: 14px;
+}
+
+.external-card:hover .card-link {
+  color: var(--accent);
 }
 
 .card-link {
@@ -635,6 +674,12 @@ td {
     padding: 10px;
   }
 
+  .work-card.external-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
   .work-card h3,
   .work-card:not(.featured) h3,
   .work-card.compact h3 {
@@ -653,6 +698,12 @@ td {
   .work-card.compact .card-thumb img,
   .work-card.compact .card-thumb span {
     height: 82px;
+  }
+
+  .external-card .card-thumb,
+  .external-card .card-thumb img,
+  .external-card .card-thumb span {
+    height: 126px;
   }
 
   .card-link {
@@ -680,6 +731,12 @@ td {
 
   .button {
     width: 100%;
+  }
+
+  .external-card .card-thumb,
+  .external-card .card-thumb img,
+  .external-card .card-thumb span {
+    height: 118px;
   }
 
   .feedback-card {
