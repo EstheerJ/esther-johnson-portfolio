@@ -325,62 +325,21 @@ function escapeHtml(value) {
 
 function renderHome() {
   document.title = "Esther Johnson | Content Designer & UX Writer";
-  const featured = projects.filter((project) => !project.supportingGroup).map((project) => projectCard(project)).join("");
-  const supporting = externalWork.map(externalCard).join("");
 
   app.innerHTML = `
-    <section class="page hero">
-      <div>
-        <p class="kicker">Content Designer & UX Writer</p>
-        <h1>Simplifying complex product experiences through clear content.</h1>
-        <p class="lede">I design UX content, product language systems, and clear interface copy across different products and solutions, including fintech, gaming, and B2C/B2B experiences. My work helps teams simplify complex workflows, improve comprehension, and build users' trust at scale.</p>
-      </div>
-      <div class="hero-meta">
-        <span class="pill">UX Writing</span>
-        <span class="pill">Content design</span>
-        <span class="pill">Content systems</span>
-        <span class="pill">Product language systems</span>
-      </div>
-      <div class="actions">
-        <a class="button" href="#/work">View my work</a>
-      </div>
+    <section class="minimal-home" aria-labelledby="welcome-title">
+      <div class="minimal-mark" aria-hidden="true">EJ</div>
+      <p class="minimal-eyebrow">Welcome</p>
+      <h1 id="welcome-title">Content Designer & UX Writer</h1>
+      <p class="minimal-line">Simplifying complex product experiences through clear content.</p>
+      <a class="minimal-email" href="mailto:helloestherjohnson@gmail.com">helloestherjohnson@gmail.com</a>
+      <nav class="minimal-links" aria-label="Portfolio shortcuts">
+        <a href="#/work">Work</a>
+        <a href="#/ai-practice">AI Practice</a>
+        <a href="#/about">About</a>
+        <a href="assets/esther-johnson-resume.pdf?v=20260723" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
     </section>
-
-    <section class="page section" id="work">
-      <div class="section-head">
-        <h2>Selected work</h2>
-        <p>Trust-building UX, content systems, product language, AI-assisted tooling, and reward-based experiences.</p>
-      </div>
-      <div class="work-grid">${featured}</div>
-    </section>
-
-    <section class="page section">
-      <div class="section-head">
-        <h2>Design Portfolio</h2>
-        <p>Supporting work that shows my wider UX, product design, and public case-study background.</p>
-      </div>
-      <div class="support-grid">${supporting}</div>
-    </section>
-
-    <section class="page section">
-      <div class="split">
-        <div>
-          <p class="kicker">AI Practice</p>
-          <h2>AI for content design, not content shortcuts.</h2>
-        </div>
-        <div class="text-stack">
-          <p>I use AI to support content judgment, not replace it. My AI work focuses on helping teams apply UX writing standards, review product language, speed up content operations, and make clearer decisions inside the tools they already use.</p>
-          <ul class="principles">
-            <li>Start with clear content standards.</li>
-            <li>Keep humans responsible for final decisions.</li>
-            <li>Use AI to support review, consistency, and scale.</li>
-            <li>Treat sensitive product content with extra care.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    ${managerFeedbackSection()}
   `;
 }
 
