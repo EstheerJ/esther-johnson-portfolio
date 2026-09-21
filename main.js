@@ -343,15 +343,26 @@ function renderHome() {
   `;
 }
 
+function getProjectImage(project) {
+  if (project.thumbnail) return project.thumbnail;
+  if (project.artifact) return project.artifact;
+  if (project.artifacts && project.artifacts.length) return project.artifacts[project.artifacts.length - 1].src;
+  return "";
+}
+
 function projectCard(project, featured = false, compact = false) {
+  const image = getProjectImage(project);
   return `
     <a class="work-card ${featured ? "featured" : ""} ${compact ? "compact" : ""}" href="#/work/${project.slug}">
+      <div class="card-thumb" aria-hidden="true">
+        ${image ? `<img src="${image}" alt="">` : `<span>${escapeHtml(project.title.split(" ").slice(0, 2).map((word) => word[0]).join(""))}</span>`}
+      </div>
       <div class="card-copy">
         <span class="tag">${escapeHtml(project.label)}</span>
         <h3>${escapeHtml(project.title)}</h3>
         <p>${escapeHtml(project.summary)}</p>
+        <span class="card-link">Read project</span>
       </div>
-      <span class="card-link">View</span>
     </a>
   `;
 }
@@ -359,12 +370,15 @@ function projectCard(project, featured = false, compact = false) {
 function externalCard(item) {
   return `
     <a class="work-card compact external-card" href="${item.href}" target="_blank" rel="noreferrer">
+      <div class="card-thumb external-thumb ${escapeHtml(item.thumbClass || "")}" aria-hidden="true">
+        ${item.image ? `<img src="${item.image}" alt="">` : `<span>${escapeHtml(item.initials || "UX")}</span>`}
+      </div>
       <div class="card-copy">
         <span class="tag">${escapeHtml(item.label)}</span>
         <h3>${escapeHtml(item.title)}</h3>
         <p>${escapeHtml(item.summary)}</p>
+        <span class="card-link">View</span>
       </div>
-      <span class="card-link">View</span>
     </a>
   `;
 }
@@ -388,6 +402,10 @@ function feedbackCard(item) {
         <blockquote>${escapeHtml(item.quote)}</blockquote>
         <p>${escapeHtml(item.note)}</p>
       </div>
+      <a class="feedback-shot" href="${item.image}" target="_blank" rel="noreferrer" aria-label="Open original feedback snapshot">
+        <img src="${item.image}" alt="${escapeHtml(item.alt)}">
+        <span>Original snapshot</span>
+      </a>
     </article>
   `;
 }
@@ -423,6 +441,9 @@ function renderAbout() {
       <div class="split">
         <div class="lede">
           <p>I'm Esther Johnson, a Content Designer and UX Writer who helps bridge the gap between users and digital experiences, one word at a time.</p>
+          <figure class="about-photo">
+            <img src="assets/esther-johnson-portrait.jpg" alt="Portrait of Esther Johnson.">
+          </figure>
         </div>
         <div class="text-stack">
           <p>My work sits between content strategy, UX writing, product design, and research. I have written and improved microcopy for B2C and B2B products, simplified complex workflows, supported tone-of-voice systems, shaped information architecture, and partnered with designers, product managers, researchers, engineers, and stakeholders to make product experiences clearer.</p>
@@ -498,9 +519,19 @@ function renderProject(slug) {
         </dl>
       </aside>
       <article class="project-body">
+        ${project.artifacts ? artifactGrid(project.artifacts) : ""}
+        ${project.artifact ? `<figure class="artifact"><img src="${project.artifact}" alt="${escapeHtml(project.artifactAlt)}"></figure>` : ""}
         ${project.sections.map(sectionTemplate).join("")}
       </article>
     </section>
+  `;
+}
+
+function artifactGrid(artifacts) {
+  return `
+    <div class="artifact-grid">
+      ${artifacts.map((artifact) => `<figure class="artifact"><img src="${artifact.src}" alt="${escapeHtml(artifact.alt)}"></figure>`).join("")}
+    </div>
   `;
 }
 
